@@ -3,16 +3,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen mb-4">
       {/* Background Image */}
-      <Image
-        src="/bg.svg"
-        alt="Background"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
-
+     
       {/* Overlay and Content */}
       <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center">
         <div className="text-center text-white px-4">
@@ -28,14 +21,14 @@ const Hero = () => {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              className="block w-full rounded-sm border border-orange-500 bg-amber-500 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:ring-3 focus:outline-none sm:w-auto"
+              className="block w-full rounded-sm border border-[var(--border)] bg-[var(--primary)] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:ring-3 focus:outline-none sm:w-auto"
               href="#"
             >
               Get Started
             </a>
 
             <a
-              className="block w-full rounded-sm border border-orange-500 bg-amber-500 px-12 py-3 text-sm font-medium text-white hover:bg-transparent focus:ring-3 focus:outline-none sm:w-auto"
+              className="block w-full rounded-sm border border-[var(--border)] bg-[var(--primary)] px-12 py-3 text-sm font-medium text-white hover:bg-transparent focus:ring-3 focus:outline-none sm:w-auto"
               href="#"
             >
               Learn More

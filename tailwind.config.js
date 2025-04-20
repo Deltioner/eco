@@ -9,7 +9,8 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          primary: "teal", // Custom primary color
+          primary: "var(--primary)",
+          border: "var(--border)" // Custom primary color
         },
       },
     },
